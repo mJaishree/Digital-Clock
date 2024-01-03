@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<style>
+			.m_wrapper{
+				max-width:600px;
+				margin:auto;
+				background-color:#000;
+				padding:50px
+				}
+			h1{
+			background-color:aliceblue;
+			text-align:center;
+			margin:0
+			}
+			table{
+			width:100%;
+			border:solid 1px #fff
+			}
+			th{
+			color:#fff;
+			text-align:center
+			}
+			td{
+			border:solid 1px #000;
+			padding:10px;
+			color:red;
+			font-size:50px;
+			text-align:center
+			}
+			.m_radio{
+			font-size:16px;
+			color:#fff;
+			display:inline-block;
+			padding-right:10px;
+			}
+		</style>
+	</head>
+	<body>
+	<u></u>
+	<div>
+    <div class="m_wrapper">
+        <h1 id="m_month-name">Digital Clock</h1>
+        <table id="m_digital-clock">
+            <tr>
+                <th>DATE</th>
+                <th>MONTH</th>
+                <th>YEAR</th>
+            </tr>
+            <tr>
+                <td id="m_dd">09</td>
+                <td id="m_mm">11</td>
+                <td id="m_yy">23</td>
+            </tr>
+            <tr>
+                <th>HH</th>
+                <th>MM</th>
+                <th>SS</th>
+            </tr>
+            <tr>
+                <td id="m_hh">11</td>
+                <td id="m_m">44</td>
+                <td id="m_ss">50</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <span class="m_radio m_selected" id="m_sun">SUN</span>
+                    <span class="m_radio" id="m_MON">MON</span>
+                    <span class="m_radio" id="m_tue">TUE</span>
+                    <span class="m_radio" id="m_wed">WED</span>
+                    <span class="m_radio" id="m_thu">THU</span>
+                    <span class="m_radio" id="m_fri">FRI</span>
+                    <span class="m_radio" id="m_sat">SAT</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                     <!--<input type="radio">--><span class="m_radio m_selected" id="m_am">AM</span>
+                     <!--<input type="radio">--><span class="m_radio" id="m_pm">PM</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+	</div>
+	<script src = "clock.js"></script>
+	</body>
+</html>
